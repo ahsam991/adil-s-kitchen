@@ -40,6 +40,7 @@
                             <td><code><?= htmlspecialchars($cat['slug']) ?></code></td>
                             <td><?= $cat['sort_order'] ?></td>
                             <td>
+                                <a href="/admin/categories/<?= $cat['id'] ?>/edit" class="btn btn-sm btn-outline-primary"><i class="fas fa-edit"></i></a>
                                 <form action="/admin/categories/<?= $cat['id'] ?>/delete" method="POST" class="d-inline" onsubmit="return confirm('Delete category?')">
                                     <button type="submit" class="btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
                                 </form>

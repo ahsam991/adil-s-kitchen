@@ -38,6 +38,22 @@ class CategoryController extends Controller {
         $this->redirect('/admin/categories');
     }
 
+    public function edit(string $id): void {
+        $categoryModel = new Category();
+        $category = $categoryModel->find((int)$id);
+
+        if (!$category) {
+            $_SESSION['error'] = 'Category not found.';
+            $this->redirect('/admin/categories');
+        }
+
+        $this->view('admin/categories/edit', [
+            'category' => $category,
+            'pageTitle' => "Edit Category - Admin Panel",
+            'csrfToken' => $this->csrfToken(),
+        ]);
+    }
+
     public function update(string $id): void {
         $categoryModel = new Category();
         $categoryModel->update((int)$id, [

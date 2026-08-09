@@ -147,6 +147,7 @@ $router->get('/admin/products/[:id]/edit',      ['Admin\ProductController', 'edi
 $router->post('/admin/products/[:id]',          ['Admin\ProductController', 'update']);
 $router->post('/admin/products/[:id]/delete',   ['Admin\ProductController', 'delete']);
 $router->get('/admin/categories',               ['Admin\CategoryController', 'index']);
+$router->get('/admin/categories/[:id]/edit',    ['Admin\CategoryController', 'edit']);
 $router->post('/admin/categories',              ['Admin\CategoryController', 'store']);
 $router->post('/admin/categories/[:id]/update', ['Admin\CategoryController', 'update']);
 $router->post('/admin/categories/[:id]/delete', ['Admin\CategoryController', 'delete']);
