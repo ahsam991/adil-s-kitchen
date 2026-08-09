@@ -1,0 +1,42 @@
+# Ignore environment / database config files with credentials
+/config/database.local.php
+.env
+
+# Storage and upload contents
+/storage/logs/*.log
+/storage/invoices/*.pdf
+/public/uploads/products/*
+/public/uploads/cakes/*
+/public/uploads/gallery/*
+/public/uploads/blog/*
+!/public/uploads/products/.gitkeep
+!/public/uploads/cakes/.gitkeep
+!/public/uploads/gallery/.gitkeep
+!/public/uploads/blog/.gitkeep
+
+# Operating system / IDE files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.bak
+
+# Temporary diff files
+*_diff*.php
+*_diff*.css
+*_diff*.js
+*_diff*.sql
+*_diff*.htaccess
+*_diff*.gitignore
+*_diff*.md
+
+# CSS Reference/Template source (not part of project)
+/CSS Ref/
+
+# PHP built-in server log
+*.log
+
+# Node modules / Composer vendor (if applicable)
+/node_modules/
+/vendor/
