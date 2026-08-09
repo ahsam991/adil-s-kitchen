@@ -1,6 +1,10 @@
 # Adil's Signature Kitchen 🍰
 
-A custom-built, lightweight PHP E-Commerce platform designed specifically for Adil's Signature Kitchen. 
+**Live Demo:** [adilkitchen.adirari.shop](https://adilkitchen.adirari.shop)
+
+## 📖 About
+Adil's Signature Kitchen is a custom-built, lightweight PHP E-Commerce platform designed specifically for a homemade bakery and restaurant business in Dhaka, Bangladesh. It provides a seamless storefront for customers to browse categories like Dream Cakes, Burgers, and Cupcakes, along with a full-featured admin panel to manage products and orders.
+
 
 ## 🚀 Features
 * **Custom MVC Architecture:** Built from scratch using native PHP.
