@@ -13,7 +13,7 @@ INSERT INTO `roles` (`id`, `name`, `description`) VALUES
 
 -- Seed Admin User (Password: admin123)
 INSERT INTO `users` (`id`, `email`, `password`, `first_name`, `last_name`, `phone`, `is_active`) VALUES
-(1, 'admin@adilskitchen.com', '$2y$10$eE1h2Vq3M8w9T4vB6n7o8eH0i1j2k3l4m5n6o7p8q9r0s1t2u3v4w5', 'Adil', 'Admin', '01303721109', 1);
+(1, 'admin@adilskitchen.com', '$2y$10$C0np3KFKF.eumGvCPIhOyuXSwKNEY59T90veTurjSu5ptyIIruYg2', 'Adil', 'Admin', '01303721109', 1);
 
 INSERT INTO `user_roles` (`user_id`, `role_id`) VALUES (1, 1);
 

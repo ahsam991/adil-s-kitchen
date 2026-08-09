@@ -21,9 +21,9 @@
 // ── Base path detection (works locally AND on Hostinger) ─────────────────────
 // On Hostinger: __DIR__ = /home/u123/public_html   → dirname = /home/u123/
 // Locally:      __DIR__ = /path/project/public     → dirname = /path/project/
-define('BASE_PATH',    dirname(__DIR__));
-define('APP_PATH',     BASE_PATH . '/app');
-define('CONFIG_PATH',  BASE_PATH . '/config');
+define('BASE_PATH', __DIR__);
+define('APP_PATH', BASE_PATH . '/app');
+define('CONFIG_PATH', BASE_PATH . '/config');
 define('STORAGE_PATH', BASE_PATH . '/storage');
 
 // ── Session ──────────────────────────────────────────────────────────────────

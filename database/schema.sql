@@ -7,8 +7,9 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+06:00";
 
-CREATE DATABASE IF NOT EXISTS `adils_kitchen` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE `adils_kitchen`;
+-- NOTE: Database u314077991_adilkitchen must already exist in Hostinger hPanel
+-- Run this SQL in phpMyAdmin after selecting u314077991_adilkitchen database
+USE `u314077991_adilkitchen`;
 
 -- =================================================
 -- ROLES AND PERMISSIONS

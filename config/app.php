@@ -4,11 +4,13 @@
  * Adil's Signature Kitchen
  */
 
+$env = file_exists(__DIR__ . '/env.php') ? require __DIR__ . '/env.php' : [];
+
 return [
     'app' => [
         'name' => "Adil's Signature Kitchen",
         'tagline' => 'Homemade With Love',
-        'url' => getenv('APP_URL') ?: 'http://localhost',
+        'url' => $env['APP_URL'] ?? 'http://localhost:8000',
         'debug' => getenv('APP_DEBUG') ?: false,
         'timezone' => 'Asia/Dhaka',
         'locale' => 'en',

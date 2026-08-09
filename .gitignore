@@ -40,3 +40,10 @@ Thumbs.db
 # Node modules / Composer vendor (if applicable)
 /node_modules/
 /vendor/
+
+# Ignore local setup files
+config/env.php
+no need/
+*.zip
+database/finish_setup.sql
+database/install_database.sql
