@@ -58,12 +58,12 @@ class ProductRepositoryTest extends TestCase
         $sortOptions = ['latest', 'price_low', 'price_high', 'popular'];
         
         foreach ($sortOptions as $sort) {
-            $expectedOrderBy = match($sort) {
+            $sortMap = [
                 'price_low' => 'price ASC',
                 'price_high' => 'price DESC',
-                'popular' => 'best_seller DESC, created_at DESC',
-                default => 'created_at DESC'
-            };
+                'popular' => 'best_seller DESC, created_at DESC'
+            ];
+            $expectedOrderBy = $sortMap[$sort] ?? 'created_at DESC';
             
             $this->assertIsString($expectedOrderBy);
         }
