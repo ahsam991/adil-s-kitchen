@@ -1,49 +1,30 @@
-# Ignore environment / database config files with credentials
-/config/database.local.php
-.env
-
-# Storage and upload contents
-/storage/logs/*.log
-/storage/invoices/*.pdf
-/public/uploads/products/*
-/public/uploads/cakes/*
-/public/uploads/gallery/*
-/public/uploads/blog/*
-!/public/uploads/products/.gitkeep
-!/public/uploads/cakes/.gitkeep
-!/public/uploads/gallery/.gitkeep
-!/public/uploads/blog/.gitkeep
-
-# Operating system / IDE files
-.DS_Store
-Thumbs.db
-.idea/
-.vscode/
-*.swp
-*.bak
-
-# Temporary diff files
-*_diff*.php
-*_diff*.css
-*_diff*.js
-*_diff*.sql
-*_diff*.htaccess
-*_diff*.gitignore
-*_diff*.md
-
-# CSS Reference/Template source (not part of project)
-/CSS Ref/
-
-# PHP built-in server log
+```
+# PHP-specific ignores
+.phpunit.cache/
+vendor/
+composer.phar
+*.phar
 *.log
 
-# Node modules / Composer vendor (if applicable)
-/node_modules/
-/vendor/
+# Dependencies
+node_modules/
+vendor/
 
-# Ignore local setup files
-config/env.php
-no need/
-*.zip
-database/finish_setup.sql
-database/install_database.sql
+# Cache and temporary files
+*.cache
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build artifacts
+dist/
+build/
+target/
+```
