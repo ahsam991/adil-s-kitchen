@@ -46,19 +46,24 @@ spl_autoload_register(function (string $class): void {
         APP_PATH . '/core/',
         APP_PATH . '/models/',
         APP_PATH . '/controllers/',
-        APP_PATH . '/controllers/Admin/',
         APP_PATH . '/services/',
         APP_PATH . '/repositories/',
         APP_PATH . '/middleware/',
     ];
 
-    // Strip Admin\ namespace prefix if present (e.g. Admin\DashboardController)
-    $classFile = str_replace(['Admin\\', 'Admin/'], '', $class) . '.php';
-
-    foreach ($paths as $dir) {
-        if (file_exists($dir . $classFile)) {
-            require_once $dir . $classFile;
+    if (strpos($class, 'Admin\\') === 0) {
+        $classFile = APP_PATH . '/controllers/Admin/' . str_replace('Admin\\', '', $class) . '.php';
+        if (file_exists($classFile)) {
+            require_once $classFile;
             return;
+        }
+    } else {
+        $classFile = $class . '.php';
+        foreach ($paths as $dir) {
+            if (file_exists($dir . $classFile)) {
+                require_once $dir . $classFile;
+                return;
+            }
         }
     }
 });
