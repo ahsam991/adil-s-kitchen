@@ -4,7 +4,7 @@
  */
 
 class CartService {
-    private Cart $cartModel;
+    private $cartModel;
 
     public function __construct() {
         $this->cartModel = new Cart();

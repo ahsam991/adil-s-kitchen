@@ -4,7 +4,7 @@
  */
 
 class ProductRepository {
-    private Product $productModel;
+    private $productModel;
 
     public function __construct() {
         $this->productModel = new Product();

@@ -4,7 +4,7 @@
  */
 
 class CustomerRepository {
-    private Customer $customerModel;
+    private $customerModel;
 
     public function __construct() {
         $this->customerModel = new Customer();

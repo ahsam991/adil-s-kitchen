@@ -4,7 +4,7 @@
  */
 
 class AuthService {
-    private User $userModel;
+    private $userModel;
 
     public function __construct() {
         $this->userModel = new User();

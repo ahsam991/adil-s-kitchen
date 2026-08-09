@@ -4,7 +4,7 @@
  */
 
 class OrderRepository {
-    private Order $orderModel;
+    private $orderModel;
 
     public function __construct() {
         $this->orderModel = new Order();
