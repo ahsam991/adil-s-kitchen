@@ -319,9 +319,15 @@
                     <span class="cart-count badge bg-warning text-dark ms-1 rounded-pill" id="cart-badge" style="display:none;"></span>
                 </a>
                 <?php if (isset($_SESSION['user_id'])): ?>
-                    <a href="/my-account" class="btn btn-sm btn-outline-dark rounded-pill" aria-label="My Account">
-                        <i class="fas fa-user me-1" aria-hidden="true"></i>Account
-                    </a>
+                    <?php if (isset($_SESSION['user_role']) && in_array($_SESSION['user_role'], ['admin', 'super_admin'])): ?>
+                        <a href="/admin/dashboard" class="btn btn-sm btn-outline-danger rounded-pill fw-bold" aria-label="Admin Dashboard">
+                            <i class="fas fa-shield-alt me-1" aria-hidden="true"></i>Admin Panel
+                        </a>
+                    <?php else: ?>
+                        <a href="/my-account" class="btn btn-sm btn-outline-dark rounded-pill" aria-label="My Account">
+                            <i class="fas fa-user me-1" aria-hidden="true"></i>Account
+                        </a>
+                    <?php endif; ?>
                 <?php else: ?>
                     <a href="/login" class="btn btn-sm btn-outline-dark rounded-pill" aria-label="Login">
                         <i class="fas fa-sign-in-alt me-1" aria-hidden="true"></i>Login
