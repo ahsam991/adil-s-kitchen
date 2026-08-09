@@ -39,7 +39,7 @@ class ProductController extends Controller {
         if (isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
             $ext = pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
             $filename = 'prod_' . time() . '_' . rand(1000, 9999) . '.' . strtolower($ext);
-            $uploadDir = __DIR__ . '/../../../public/uploads/products/';
+            $uploadDir = __DIR__ . '/../../../uploads/products/';
             if (!is_dir($uploadDir)) {
                 mkdir($uploadDir, 0755, true);
             }
@@ -111,7 +111,7 @@ class ProductController extends Controller {
         if (isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
             $ext = pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
             $filename = 'prod_' . time() . '_' . rand(1000, 9999) . '.' . strtolower($ext);
-            $uploadDir = __DIR__ . '/../../../public/uploads/products/';
+            $uploadDir = __DIR__ . '/../../../uploads/products/';
             if (!is_dir($uploadDir)) {
                 mkdir($uploadDir, 0755, true);
             }

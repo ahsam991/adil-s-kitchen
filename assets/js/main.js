@@ -178,6 +178,7 @@ function openMenuPop(card) {
     var time = card.getAttribute('data-time');
     var desc = card.getAttribute('data-desc');
     var tags = card.getAttribute('data-tags') || '';
+    var id = card.getAttribute('data-id');
 
     document.getElementById('mpImg').setAttribute('src', img);
     document.getElementById('mpCat').textContent = cat;
@@ -208,6 +209,7 @@ function openMenuPop(card) {
     document.getElementById('mpQnum').textContent = 1;
     document.getElementById('mpAddCart').innerHTML = '<i class="fas fa-shopping-cart"></i> Add to Cart';
     document.getElementById('mpAddCart').style.background = '';
+    document.getElementById('mpAddCart').setAttribute('data-product-id', id);
 
     menuPop.classList.add('open');
     document.body.style.overflow = 'hidden';

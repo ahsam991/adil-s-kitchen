@@ -23,7 +23,7 @@ class CustomCakeController extends Controller {
         if (isset($_FILES['photo']) && $_FILES['photo']['error'] === UPLOAD_ERR_OK) {
             $ext = pathinfo($_FILES['photo']['name'], PATHINFO_EXTENSION);
             $filename = 'cake_' . time() . '_' . rand(1000, 9999) . '.' . strtolower($ext);
-            $uploadDir = __DIR__ . '/../../public/uploads/cakes/';
+            $uploadDir = __DIR__ . '/../../uploads/cakes/';
             if (!is_dir($uploadDir)) {
                 mkdir($uploadDir, 0755, true);
             }
