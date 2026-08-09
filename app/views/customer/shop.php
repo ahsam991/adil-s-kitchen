@@ -44,24 +44,37 @@
                     </div>
                 <?php else: ?>
                     <?php foreach ($products as $p): ?>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="product-card">
-                                <div class="product-img-wrapper">
-                                    <img src="<?= !empty($p['image']) ? $p['image'] : 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&auto=format&fit=crop' ?>" alt="<?= htmlspecialchars($p['name']) ?>">
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                            <article class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                                <div class="position-relative overflow-hidden" style="padding-top:75%;">
+                                    <img 
+                                        src="<?= !empty($p['image']) ? $p['image'] : 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&auto=format&fit=crop' ?>" 
+                                        alt="<?= htmlspecialchars($p['name']) ?>"
+                                        class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+                                        loading="lazy">
+                                    <?php if (!empty($p['best_seller'])): ?>
+                                        <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill" style="background:var(--primary);">
+                                            <i class="fas fa-star me-1" aria-hidden="true"></i> Best Seller
+                                        </span>
+                                    <?php endif; ?>
                                 </div>
-                                <div class="product-body">
-                                    <span class="product-category"><?= htmlspecialchars($p['category_name'] ?? 'Bakery') ?></span>
-                                    <h3 class="product-title"><a href="/product/<?= $p['slug'] ?>"><?= htmlspecialchars($p['name']) ?></a></h3>
-                                    <div class="product-price">
+                                <div class="card-body p-4 d-flex flex-column">
+                                    <span class="text-uppercase text-muted mb-1" style="font-size:.7rem;letter-spacing:1px;font-weight:600;"><?= htmlspecialchars($p['category_name'] ?? 'Bakery') ?></span>
+                                    <h3 class="h6 fw-bold mb-2">
+                                        <a href="/product/<?= $p['slug'] ?>" class="text-dark stretched-link">
+                                            <?= htmlspecialchars($p['name']) ?>
+                                        </a>
+                                    </h3>
+                                    <div class="fw-bold mb-3" style="color:var(--primary);font-size:1.1rem;">
                                         ৳<?= number_format($p['price'], 2) ?>
                                     </div>
-                                    <div class="product-actions">
-                                        <button class="btn btn-primary-custom btn-add-cart w-100" data-product-id="<?= $p['id'] ?>">
+                                    <div class="mt-auto">
+                                        <button class="btn btn-sm btn-outline-danger w-100 rounded-pill btn-add-cart" data-product-id="<?= $p['id'] ?>" style="position:relative;z-index:10;">
                                             <i class="fas fa-shopping-bag me-1"></i> Add to Cart
                                         </button>
                                     </div>
                                 </div>
-                            </div>
+                            </article>
                         </div>
                     <?php endforeach; ?>
                 <?php endif; ?>
