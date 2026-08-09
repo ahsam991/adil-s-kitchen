@@ -11,10 +11,13 @@ Options -MultiViews -Indexes
     RewriteEngine On
     RewriteBase /
 
-    # Allow direct access to real files and directories (css, js, images, uploads)
+    # Direct access to real files & directories (assets, uploads, etc.)
     RewriteCond %{REQUEST_FILENAME} -f [OR]
     RewriteCond %{REQUEST_FILENAME} -d
     RewriteRule ^ - [L]
+
+    # Serve sitemap as XML
+    RewriteRule ^sitemap\.xml$ sitemap.php [QSA,L]
 
     # Everything else → front controller
     RewriteRule ^ index.php [QSA,L]

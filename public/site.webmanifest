@@ -1,0 +1,50 @@
+{
+  "name": "Adil's Signature Kitchen",
+  "short_name": "Adil's Kitchen",
+  "description": "Best homemade cakes, custom birthday cakes, dream cakes & fast food in Dhaka, Bangladesh. Homemade With Love.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F8F3EE",
+  "theme_color": "#6A1B2E",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-BD",
+  "icons": [
+    {
+      "src": "/assets/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Order Custom Cake",
+      "short_name": "Custom Cake",
+      "description": "Design and order your custom birthday cake",
+      "url": "/custom-cake",
+      "icons": [{ "src": "/assets/images/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Shop Menu",
+      "short_name": "Menu",
+      "description": "Browse our full bakery & fast food menu",
+      "url": "/shop",
+      "icons": [{ "src": "/assets/images/icon-192.png", "sizes": "192x192" }]
+    }
+  ],
+  "categories": ["food", "shopping"],
+  "screenshots": [
+    {
+      "src": "/assets/images/og-image.jpg",
+      "sizes": "1200x630",
+      "type": "image/jpeg"
+    }
+  ]
+}

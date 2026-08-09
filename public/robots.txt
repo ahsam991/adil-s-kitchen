@@ -1,0 +1,31 @@
+User-agent: *
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /my-account/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /login/
+Disallow: /register/
+Disallow: /forgot-password/
+Disallow: /wishlist/
+
+# Disallow API and AJAX endpoints
+Disallow: /cart/add
+Disallow: /cart/update
+Disallow: /cart/remove
+Disallow: /wishlist/add
+Disallow: /wishlist/remove
+
+# Allow all assets
+Allow: /assets/
+Allow: /uploads/
+
+# Sitemaps
+Sitemap: https://adilskitchen.com/sitemap.xml
+Sitemap: https://adilskitchen.com/sitemap-products.xml
+Sitemap: https://adilskitchen.com/sitemap-blog.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
