@@ -193,7 +193,7 @@
           "paymentAccepted": "Cash, bKash, Nagad",
           "hasMap": "https://www.google.com/maps?q=Adil's+Signature+Kitchen+Dhaka",
           "sameAs": [
-            "https://www.facebook.com/adilskitchen",
+            "https://www.facebook.com/profile.php?id=61592808609942",
             "https://www.instagram.com/adilskitchen"
           ],
           "foundingDate": "2020",
@@ -267,7 +267,7 @@
             <div class="d-flex align-items-center gap-3">
                 <span class="ttag"><i class="fas fa-heart me-1" aria-hidden="true"></i>"Homemade With Love"</span>
                 <div class="tsoc" aria-label="Social media links">
-                    <a href="https://facebook.com/adilskitchen" target="_blank" rel="noopener me" aria-label="Follow on Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61592808609942" target="_blank" rel="noopener me" aria-label="Follow on Facebook"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://instagram.com/adilskitchen" target="_blank" rel="noopener me" aria-label="Follow on Instagram"><i class="fab fa-instagram"></i></a>
                     <a href="/order-tracking" aria-label="Track your order"><i class="fas fa-truck text-white"></i></a>
                 </div>

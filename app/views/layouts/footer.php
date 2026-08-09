@@ -25,7 +25,7 @@
                         Handcrafted celebration cakes, 5-layer dream cakes, frosted cupcakes, mango tub cakes, crispy chicken burgers, rolls and samusas — prepared fresh daily with 100% halal ingredients and homemade love.
                     </p>
                     <div class="d-flex gap-2">
-                        <a href="https://facebook.com/adilskitchen" target="_blank" rel="noopener me" aria-label="Facebook" class="d-inline-flex align-items-center justify-content-center rounded-circle" style="width:34px;height:34px;background:rgba(255,255,255,.08);color:#bbb;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61592808609942" target="_blank" rel="noopener me" aria-label="Facebook" class="d-inline-flex align-items-center justify-content-center rounded-circle" style="width:34px;height:34px;background:rgba(255,255,255,.08);color:#bbb;"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://instagram.com/adilskitchen" target="_blank" rel="noopener me" aria-label="Instagram" class="d-inline-flex align-items-center justify-content-center rounded-circle" style="width:34px;height:34px;background:rgba(255,255,255,.08);color:#bbb;"><i class="fab fa-instagram"></i></a>
                         <a href="https://wa.me/8801303721109" target="_blank" rel="noopener" aria-label="WhatsApp" class="d-inline-flex align-items-center justify-content-center rounded-circle" style="width:34px;height:34px;background:rgba(255,255,255,.08);color:#bbb;"><i class="fab fa-whatsapp"></i></a>
                     </div>
