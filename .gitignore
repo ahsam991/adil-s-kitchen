@@ -1,0 +1,88 @@
+# Ignore environment / database config files with credentials
+/config/database.local.php
+.env
+
+# Storage and upload contents
+/storage/logs/*.log
+/storage/invoices/*.pdf
+/public/uploads/products/*
+/public/uploads/cakes/*
+/public/uploads/gallery/*
+/public/uploads/blog/*
+!/public/uploads/products/.gitkeep
+!/public/uploads/cakes/.gitkeep
+!/public/uploads/gallery/.gitkeep
+!/public/uploads/blog/.gitkeep
+
+# Operating system / IDE files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*.bak
+
+# Temporary diff files
+*_diff*.php
+*_diff*.css
+*_diff*.js
+*_diff*.sql
+*_diff*.htaccess
+*_diff*.gitignore
+*_diff*.md
+
+# CSS Reference/Template source (not part of project)
+/CSS Ref/
+
+# PHP built-in server log
+*.log
+
+# Node modules / Composer vendor (if applicable)
+/node_modules/
+/vendor/
+
+# Ignore local setup files
+config/env.php
+no need/
+*.zip
+database/finish_setup.sql
+database/install_database.sql
+
+graphify-out/
+
+# PHP/testing and archive artifacts
+.phpunit.cache/
+composer.phar
+*.phar
+
+# Temporary and build artifacts
+*.cache
+*.tmp
+dist/
+build/
+target/
+
+# Local preview / tool state
+.freebuff/
+
+# Motion demo dependencies
+motion-demo/node_modules/
+motion-demo/dev.log
+
+# Skills tooling (embedded repo — keep local)
+custom-skills/
+
+# User uploads (correct paths — originals pointed at /public/...)
+/uploads/products/*
+/uploads/cakes/*
+/uploads/gallery/*
+/uploads/blog/*
+!/uploads/products/.gitkeep
+!/uploads/cakes/.gitkeep
+!/uploads/gallery/.gitkeep
+!/uploads/blog/.gitkeep
+
+# Local preview placeholder images (real ones live on the server)
+assets/images/products/
+assets/images/categories/

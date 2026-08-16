@@ -1,0 +1,34 @@
+{
+    "name": "adils-kitchen/cake-shop",
+    "description": "Adil's Kitchen Cake Shop",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Admin",
+            "email": "admin@adilskitchen.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^10.0"
+    },
+    "autoload": {
+        "classmap": [
+            "app/core/",
+            "app/models/",
+            "app/controllers/",
+            "app/services/",
+            "app/repositories/",
+            "app/middleware/"
+        ]
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/"
+        ]
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test:coverage": "phpunit --coverage-html coverage"
+    }
+}
